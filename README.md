@@ -2,7 +2,7 @@
 Weekly email with report tables inside email body and attached as PDFs
 
 Goal: Send a weekly email that contains the RFI and Submittal reports
-Sub-goal:  Allow recipients to copy data directly out of the email body
+  Sub-goal:  Allow recipients to copy data directly out of the email body
 
 Process:
 
