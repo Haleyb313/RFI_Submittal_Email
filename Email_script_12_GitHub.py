@@ -13,7 +13,7 @@ import time
 # Next, make the email
 # Then add the PDFs as attachments
 # Add the tables into the email AS TEXT so people can copy!
-# Send!  Or somehow keep it as a draft for me to review later?
+# Send!  
 
 # Get the name of the file. As there should only be *ONE* Excel file, make a list of one
 path = r"C:\Users\haley\Python - Haley projects\RFI_Submittal_Email"
@@ -35,7 +35,7 @@ macroSubmittal()
 #wb.close() <--this closes the workbook but not the Excel app
 app.quit()
 
-# Finally, we need to know the names of the html files we just created, so lets make a list!
+# Finally, we need to know the names of the html files we just created, so lets make a list
 extensionHTML = 'html'
 os.chdir(path + "\HTMLtables")  # go into the right folder
 resultHTML = glob.glob('*.{}'.format(extensionHTML))
@@ -60,12 +60,7 @@ msg['From'] = fromaddr
 msg['To'] = toaddr
 
 # storing the subject
-msg['Subject'] = "Test email HTML"
-
-# string to store the body of the mail
-#body = "hello yes this is dog"
-#msg.attach(MIMEText(body, 'plain'))
-
+msg['Subject'] = "RFI Submittal email HTML"
 
 # Build the HTML body
 
